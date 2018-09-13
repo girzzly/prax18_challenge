@@ -14,3 +14,4 @@ picturedecoder/dist/README\.TXT
 
 
 .gitignore
+pictureencoder/build\.xml

@@ -12,6 +12,7 @@ public class PictureDecoder {
     public static void main(String[] args) {
         
         String input = args[0];  
+        //hallo
 	System.out.println(input);
     }
     

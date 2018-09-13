@@ -2,6 +2,7 @@
 
 cd picturedecoder\dist
 
-java -jar picturedecoder.jar hallo
+# Starten des Programms
+java -jar picturedecoder.jar 579744
 
 pause

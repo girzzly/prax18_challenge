@@ -10,3 +10,7 @@ nbdist/
 
 
 # End of https://www.gitignore.io/api/netbeans
+picturedecoder/dist/README\.TXT
+
+
+.gitignore

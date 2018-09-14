@@ -8,7 +8,7 @@ Um es genauer zu sagen: VW setzt auf E-Mobilität.
 
 wie schön, dass es dort schon ein Unternehmen gibt, bei dem man sich "Inspiration holen kann"...
 
-Die Konkurrenz ist kein geringerer als <b>TESLA</b>. Der bekannteste Hersteller für Elektro-Autos.
+Die Konkurrenz ist kein geringerer als **TESLA**. Der bekannteste Hersteller für Elektro-Autos.
 Ihre IT-Abteilung war netterweise so lieb und hat für sie Datenpakete zwischen Ingenieuren, Auto-Designern und
 Firmenchef Elon Musk höchstpersönlich abgefangen.
 

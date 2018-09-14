@@ -37,7 +37,8 @@ def extract(in_file, out_file):
     for h in range(height):
         for w in range(width):
             (r, g, b, a) = conv.getpixel((w, h))
-            v.append(r & 1)
+            v.append(a & 1)
+
     data_out = assemble(v)
 
     # Write decrypted data

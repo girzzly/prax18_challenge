@@ -117,7 +117,7 @@ public class PictureDecoder {
 
         File inputFile = new File(file);
         
-        String decodeFilename = file.substring(7, file.length());
+        String decodeFilename = file.substring(8, file.length());
         
         File outputFile = new File("decoded_" + decodeFilename);
 

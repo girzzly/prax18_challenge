@@ -46,7 +46,7 @@ public class PictureEncoder {
         if (transformationType.equals("encode") || transformationType.equals("decode")) {
 
             File inputFile = new File(directory + file);
-            File outputFile = new File(directory + transformationType + "_" + file);
+            File outputFile = new File(directory + transformationType + "d_" + file);
 
             FileInputStream reader;
             FileOutputStream writer;

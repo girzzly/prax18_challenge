@@ -60,7 +60,9 @@ def embed(imgFilename, payloadFilename):
             # red, green, blue and alpha.
 
             # TODO: Fill in here (Hier ergaenzen)
-
+            if(idx < len(bits)):
+	    	a = set_bit(a, 0, bits[idx])
+	   	  
             # Write the modified pixel data back to the image
             data_img.putpixel((w,h), (r, g, b, a))
             # Adapt the index for the payload bits list

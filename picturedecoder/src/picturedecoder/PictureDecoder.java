@@ -15,23 +15,28 @@ import static java.lang.Integer.parseInt;
  */
 public class PictureDecoder {
 
+    /* Leser für die codierte Bild-Datei. */
     private static BufferedReader reader;
-
+    /* Name der Datei 'code'. */
     private static String code = "code";
+    /* Speicherung des Namens der übergebenen Bild-Datei. */
     private static String file;
 
+    /* Speicherung Zahl die übergeben wird. */
     private static int input;
+    /* Speicherung des Inhalts der Datei 'code'. */
     private static String output;
 
     /**
-     * @param args the command line arguments
+     * @param args Die übergebenen Komandozeilenargumente.
      */
     public static void main(String[] args) {
-
+        
+        // Überprüfung der Anzahl der mitgegebenen Parameter.
         switch (args.length) {
             case 2:
-                file = args[0];
-                input = parseInt(args[1]);
+                file = args[0]; // Erster Parameter Dateiname
+                input = parseInt(args[1]); // Zweiter Parameter Zahl
 
                 setUpReader();
 
@@ -60,15 +65,19 @@ public class PictureDecoder {
 
     }
 
+    /**
+     * Liest die Code-Datei ein und speichert den enthaltenen Wert in die
+     * Variable output vom Typ String.
+     */
     public static void setUpReader() {
 
         reader = null;
 
         try {
             
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(code)));
-            output = reader.readLine();
-            reader.close();
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(code))); // Liest Datei 'code' ein.
+            output = reader.readLine(); // List die erste Zeile der Datei 'code'.
+            reader.close(); // Leser wird geschlossen.
 
         } catch (FileNotFoundException e) {
 
@@ -80,6 +89,11 @@ public class PictureDecoder {
         }
     }
 
+    /**
+     * Rechnet die Binärwerte in der Code-Datei in eine dezimale Zahl um.
+     * @param output Der inhalt der Datei 'Code' als String.
+     * @return Liefert die umgerechnete dezimale Zahl zurück.
+     */
     public static int getDecimal(String output) {
 
         // Länge der Zahlenfolge: 24
@@ -113,28 +127,32 @@ public class PictureDecoder {
         return number;
     }
 
+    /**
+     * Decodiert die angegebene Bild-Datei und macht sie wieder anzeigbar.
+     */
     public static void decode() {
 
         File inputFile = new File(file);
         
-        String decodeFilename = file.substring(8, file.length());
+        String decodeFilename = file.substring(8, file.length()); // Schneidet 'encode_' von dem Dateinamen ab.
         
-        File outputFile = new File("decoded_" + decodeFilename);
+        File outputFile = new File("decoded_" + decodeFilename); // Schreibt 'decode_' an den Dateinamen.
 
         FileInputStream reader;
         FileOutputStream writer;
 
         try {
 
-            reader = new FileInputStream(inputFile);
-            writer = new FileOutputStream(outputFile);
+            reader = new FileInputStream(inputFile); // Leser für die codierte Bild-Datei.
+            writer = new FileOutputStream(outputFile); // Schreiber für die decodierte Bild-Datei.
 
-            int sign = reader.read();
+            int sign = reader.read(); // Lese erstes Zeichen ein.
 
             while (sign != -1) {
 
-                writer.write(sign - 1);
-                sign = reader.read();
+                writer.write(sign - 1); // Beim decodieren wird der Bitwert
+                                        // jedes Zeichens wird um eins verringert.
+                sign = reader.read(); // Lese nächstes Zeichen ein.
             }
 
             reader.close();

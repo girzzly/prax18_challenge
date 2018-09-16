@@ -26,7 +26,11 @@ Zunächst empfiehlt es sich die Challenge auf der **Kali-Linux Maschine** durchz
 
 Sie bekommen einen Ordner mit folgenden Datein und Programmen:
 - code 
-- teslapng
+- encoded_tesla.png
+- jd-gui-1.4.0_decompiler.jar
+- picturedecoder.jar
+- stegolyzer.py
+- decoding.py
  
 
 

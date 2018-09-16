@@ -150,10 +150,20 @@ python stegolyzer.py decoded_tesla.png red
 Allerdings werden Sie in den RBG Farbkanälen keine Auffälligkeiten feststellen. Anders sieht es im Alpha-Kanal aus.
 Geben Sie
 ````
-python stegolyzer.py decoded_tesla.png red
+python stegolyzer.py decoded_tesla.png alpha
 ````
 
 in das Terminal ein und Sie werden sehen, dass es hier gegenüber den RBG Kanälen starke Abweichungen gibt. Genau hier ist auch die steganographische Nachricht versteckt. Sie wurde im Last Significant Bit (LSB) des Alpha-Kanals versteckt.
+
+Wenn sie nun den "decoding.py" benutzen wollen um die Nachricht zu exfiltrieren werden sie bemerken, dass dies nicht geht, da etwas im Programmcode fehlt. Öffnen sie also über die GUI "decoding.py" und lassen Sie sich den Programmcode anzeigen.
+
+Fügen sie unter **"# TODO: Fill in here (Hier ergaenzen)"** folgenden Code ein
+````
+v.append(a & 1)
+````
+Diese Zeile befiehlt dem Programm den Alpha-Kanal zu entschlüsseln.
+
+
 
 
 

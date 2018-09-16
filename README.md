@@ -32,7 +32,7 @@ Sie bekommen einen Ordner mit folgenden Datein und Programmen:
 - stegolyzer.py
 - decoding.py
 
-Ihre Aufgabe besteht nun darin mit den gegebenen Tools so viele Informationen wie möglich zu extrahieren. Einige davon sollten Ihnen davon aus dem PRAX-Praktikum bekannt sein.
+Ihre Aufgabe besteht nun darin mit den gegebenen Tools so viele Informationen wie möglich zu extrahieren. Einige davon sollten Ihnen aus dem PRAX-Praktikum bekannt sein.
 Ich wünsche Ihnen viel Spaß bei der Durchführung der Challenge!
 
 ## Hinweise
@@ -46,6 +46,7 @@ Man könnte denken, dass der gegebene Code eine große Zahl repräsentiert...vie
 Schauen sie sich den Programmcode vom Picturedecoder genau an...
 
 #### 3.
+
 
 
 

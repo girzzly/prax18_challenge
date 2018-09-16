@@ -49,7 +49,7 @@ Schauen sie sich den Programmcode vom Picturedecoder genau an...
 Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht bewusst, dass sich das "große Ganze" aus Millionen von kleinen Dingen zusammensetzt. Manchmal hilft es mit der Lupe genauer hinzuschauen...
 
 
-                                                         α
+                                                         **α**
                                                             
                                                             
                                                             

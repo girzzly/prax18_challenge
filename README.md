@@ -74,7 +74,7 @@ Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. 
 java -jar jd-gui-1.4.0_dempiler.jar picturedecoder.jar 
 ```
 Nun öffnet sich eine grafische Oberfläche und wir können uns damit den Programmcode vom pictureencoder ansehen.
-Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweite Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
+Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweiter Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
 
 ```
                 if (input == getDecimal(output)) {
@@ -83,7 +83,40 @@ Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweite P
 
                 }
 ```                
+Nun hilft es einen Blick auf die "getDecimal" Methode zu werfen.
+````
+    public static int getDecimal(String output) {
 
+        // Länge der Zahlenfolge: 24
+        // 0101 0111 1001 0111 0100 0100
+        // 5    7    9    7    4    4
+        
+        int blocks = 6;
+        int blockSize = 4;
+        
+        int[] numbers = new int[blocks];
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            numbers[i] = parseInt(output.substring(0, blockSize));
+            if (output.length() > blockSize) {
+                output = output.substring(blockSize, output.length() - 1);
+            }
+        }
+        
+        int number = 0;
+        int j = 100000;
+        for (int i = 0; i < numbers.length; i++) {
+            number = number + ((numbers[i] % 10 * 1) + (numbers[i] / 10 % 10 * 2)
+                    + (numbers[i] / 100 % 10 * 4)
+                    + (numbers[i] / 1000 % 10 * 8)) * j;
+            j = j / 10;
+
+        }
+
+        return number;
+    }
+````
                                                             
                                                             
                                                             

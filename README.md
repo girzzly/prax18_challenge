@@ -69,10 +69,20 @@ Sie sehen nun folgende in dem Ornder befindliche Dateien:
 - decoding.py
 
 Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. Dies machen Sie über diesen Befehl
-```
-cd java -jar jd-gui-1.4.0_decompiler.jar
-```
 
+```
+java -jar jd-gui-1.4.0_dempiler.jar picturedecoder.jar 
+```
+Nun öffnet sich eine grafische Oberfläche und wir können uns damit den Programmcode vom pictureencoder ansehen.
+Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweite Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
+
+```
+                if (input == getDecimal(output)) {
+
+                    decode();
+
+                }
+```                
 
                                                             
                                                             

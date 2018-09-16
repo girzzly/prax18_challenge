@@ -38,10 +38,12 @@ Ich wünsche Ihnen viel Spaß bei der Durchführung der Challenge!
 ## Hinweise
  
 #### 1.
-Sie werden nicht drumherum kommen, dass Porgramm zu decompilieren. Nur so wissen Sie, wie das Programm genau macht.
+Sie werden nicht drumherum kommen das Porgramm zu decompilieren. Nur so wissen Sie, was das Programm genau macht.
+Ein Decompiler befindet sich im gegebenen Ordner. Benutzen Sie ihn.
 
 #### 2.
 Man könnte denken, dass der gegebene Code eine große Zahl repräsentiert...vielmehr ist er aufgeteilt in gleichgroße Blöcke...
+Schauen sie sich den Programmcode vom Picturedecoder genau an...
 
 #### 3.
 

@@ -117,7 +117,7 @@ Nun hilft es einen Blick auf die "getDecimal" Methode zu werfen.
         return number;
     }
 ````
-"output" übergibt hier den Code (010101111001011101000100). Dieser wird in der ersten for-Schleife in 6 gleichgroße Blöcke a 4 Ziffern in einem Array gespeichert. In der zweiten for-Schleife geschieht die Umrechnung von Binär zu Dezimal. Allerdings wird nicht die gesamte Binärzahl als Ganzes umgerechnet, sondern Block für Block. Sprich jede 4 Bit repräsentieren eine Dezimal-Zahl.
+"output" übergibt hier den Code (010101111001011101000100). Dieser wird in der ersten for-Schleife in **6 gleichgroße Blöcke a 4 Ziffern** in einem Array gespeichert. In der zweiten for-Schleife geschieht die Umrechnung von Binär zu Dezimal. Allerdings wird nicht die gesamte Binärzahl als Ganzes umgerechnet, sondern Block für Block. Sprich jede 4 Bit repräsentieren eine Dezimal-Zahl.
 Somit wird am Ende folgende Dezimalzahl zurückgegeben.
 
         // 0101 0111 1001 0111 0100 0100
@@ -130,8 +130,30 @@ java -jar picturedecoder.jar encoded_tesla.png 579744
 ````
 
 Im Ordner "tesla-spionage" sehen sie nun das entschlüsselte Bild mit dem Namen "decoded_tesla.png"
-Jetzt wissen wir schon mal, dass Tesla die besseren Designer als unser Unternehmen Volkswagen hat ;)
+Jetzt wissen Sie schon mal, dass Tesla die besseren Auto-Designer hat;)
 Das Bild können sie sich über die GUI ansehen.
+
+Der Dritte Hinweis und die Python Programme geben Aufschluss darüber, dass hier etwas **steganographisch** versteckt ist.
+Benutzen sie das "stegolyzer.py" Programm um die Farbkanäle des Bildes zu untersuchen. Bedenken Sie, dass es neben (R)ot, (G)rün und (B)lau noch den Alpha-Kanal gibt. Dieser ist für die Transparenz zuständig.
+
+Mit
+````
+python stegolyzer.py decoded_tesla.png
+````
+und den Parametern **red, green, blue und alpha** können sie die jeweiligen Farbkanäle untersuchen.
+Hier ein Beispiel um den roten Farbkanal zu untersuchen
+
+````
+python stegolyzer.py decoded_tesla.png red
+````
+
+Allerdings werden Sie in den RBG Farbkanälen keine Auffälligkeiten feststellen. Anders sieht es im Alpha-Kanal aus.
+Geben Sie
+````
+python stegolyzer.py decoded_tesla.png red
+````
+
+in das Terminal ein und Sie werden sehen, dass es hier gegenüber den RBG Kanälen starke Abweichungen gibt. Genau hier ist auch die steganographische Nachricht versteckt. Sie wurde im Last Significant Bit (LSB) des Alpha-Kanals versteckt.
 
 
 

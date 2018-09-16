@@ -46,7 +46,7 @@ Man könnte denken, dass der gegebene Code eine große Zahl repräsentiert...vie
 Schauen sie sich den Programmcode vom Picturedecoder genau an...
 
 #### 3.
-Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht bewusst, dass sich das "große Ganze" aus Millionen von kleinen Dingen zusammensetzt. Manchmal hilft es mit der Lupe genauer hinzuschauen
+Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht bewusst, dass sich das "große Ganze" aus Millionen von kleinen Dingen zusammensetzt. Manchmal hilft es mit der Lupe genauer hinzuschauen...
 
 
                                                            α
@@ -55,9 +55,13 @@ Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht
 In der Musterlösung gebe ich eine detaillierten Beschreibung zur vollständigen Lösung meiner PRAX-Challenge.
 Ich werde Schritt für Schritt aufzeigen wie und in welcher Reihenfolge man vorzugehen hat, um die benötigten Informationen zu exfiltrieren.
 
-Zunächst 
-                                                           
+Als erstes kopieren wir den Ordner "tesla-spionage" auf den **Desktop** unserer Kali-Linux Maschine
 
+Anschließend navigieren per Terminal in den Ordner mit dem folgenden Befehl
+
+```
+cd Desktop/tesla-spionage
+```
 
                                                             
                                                             

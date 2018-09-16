@@ -129,6 +129,10 @@ Der erste Parameter ist der Dateiname des Bildes. Also müssen Sie folgenden Bef
 java -jar picturedecoder.jar encoded_tesla.png 579744
 ````
 
+Im Ordner "tesla-spionage" sehen sie nun das entschlüsselte Bild mit dem Namen "decoded_tesla.png"
+Jetzt wissen wir schon mal, dass Tesla die besseren Designer als unser Unternehmen Volkswagen hat ;)
+Das Bild können sie sich über die GUI ansehen.
+
 
 
 

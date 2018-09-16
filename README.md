@@ -33,6 +33,9 @@ Sie bekommen einen Ordner mit folgenden Datein und Programmen:
 - decoding.py
 
 Ihre Aufgabe besteht nun darin mit den gegebenen Tools so viele Informationen wie möglich zu extrahieren. Einige davon sollten Ihnen davon aus dem PRAX-Praktikum bekannt sein.
+Ich wünsche Ihnen viel Spaß bei der Durchführung der Challenge!
+
+## Hinweise
  
 
 

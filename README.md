@@ -60,6 +60,14 @@ Anschließend navigieren per Terminal in den Ordner mit dem folgenden Befehl
 ```
 cd Desktop/tesla-spionage
 ```
+Wir sehen nun folgende in dem Ornder befindliche Dateien
+- code 
+- encoded_tesla.png
+- jd-gui-1.4.0_decompiler.jar
+- picturedecoder.jar
+- stegolyzer.py
+- decoding.py
+
 
                                                             
                                                             

@@ -23,7 +23,8 @@ Schließlich waren Sie damals treibende Kraft bei der Software-Manipulation im i
 ## Aufbau der Challenge
 
 Zunächst empfiehlt es sich die Challenge auf der **Kali-Linux Maschine** durchzuführen, da für Windows etwaige Python-Module besorgt werden müssen.
-Sie bekommen einen Ordner mit folgenden Datein und Porgrammen:
+
+Sie bekommen einen Ordner mit folgenden Datein und Programmen:
 - code 
 - teslapng
  

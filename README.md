@@ -55,18 +55,23 @@ Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht
 In der Musterlösung gebe ich eine detaillierten Beschreibung zur vollständigen Lösung meiner PRAX-Challenge.
 Ich werde Schritt für Schritt aufzeigen wie und in welcher Reihenfolge man vorzugehen hat, um die benötigten Informationen zu exfiltrieren.
 
-Als erstes kopieren wir den Ordner "tesla-spionage" auf den **Desktop** unserer Kali-Linux Maschine
-Anschließend navigieren per Terminal in den Ordner mit dem folgenden Befehl
+Als erstes kopieren Sie den Ordner "tesla-spionage" auf den **Desktop** unserer Kali-Linux Maschine
+Anschließend navigieren Sie per Terminal in den Ordner mit dem folgenden Befehl
 ```
 cd Desktop/tesla-spionage
 ```
-Wir sehen nun folgende in dem Ornder befindliche Dateien
+Sie sehen nun folgende in dem Ornder befindliche Dateien:
 - code 
 - encoded_tesla.png
 - jd-gui-1.4.0_decompiler.jar
 - picturedecoder.jar
 - stegolyzer.py
 - decoding.py
+
+Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. Dies machen Sie über diesen Befehl
+```
+cd java -jar jd-gui-1.4.0_decompiler.jar
+```
 
 
                                                             

@@ -175,7 +175,7 @@ ID: bd0c07abe32eeb42963a1059e8e86ea661430f6718c8db10328b32d0801b3e09
 
 Herzlichen Glückwunsch! Sie haben die Challenge erfolgreich abgeschlossen!
 
-```diff
+```
 + this will be highlighted in green
 - this will be highlighted in red
 ```

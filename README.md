@@ -1,7 +1,7 @@
 # PRAX18 Challenge
 
 
-Sie sind in der IT-Abteilung bei Volkswagen und werden beauftragt die Kommunikation bei der Konkurrenz zu entschlüsseln.
+Sie sind in der IT-Abteilung bei **Volkswagen** und werden beauftragt die Kommunikation bei der Konkurrenz zu entschlüsseln.
 Da ihr Unternehmen in der Vergangenheit mit dem großen Abgas-Skandal zu kämpfen hatte, beschließt die Geschäftsführung 
 ihr Image wieder auf Vordermann zu bringen und möchte durch Nachhaltigkeit, Umweltbewusstsein und Transparenz glänzen.
 Um es genauer zu sagen: VW setzt auf E-Mobilität.
@@ -38,15 +38,15 @@ Ich wünsche Ihnen viel Spaß bei der Durchführung der Challenge!
 ## Hinweise
  
 #### 1.
-Sie werden nicht drumherum kommen das Programm zu decompilieren. Nur so wissen Sie, was das Programm genau macht.
+Sie werden nicht drumherum kommen das Programm **"picturedecoder.jar" zu decompilieren**. Nur so wissen Sie, was das Programm genau macht.
 Ein Decompiler befindet sich im gegebenen Ordner. Benutzen Sie ihn.
 
 #### 2.
-Man könnte denken, dass der gegebene Code eine große Zahl repräsentiert...vielmehr ist er aufgeteilt in gleichgroße Blöcke...
+Man könnte denken, dass der gegebene Code eine große Zahl repräsentiert...vielmehr ist er aufgeteilt in **vier gleichgroße Blöcke...**
 Schauen sie sich den Programmcode vom Picturedecoder genau an...
 
 #### 3.
-Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht bewusst, dass sich das "große Ganze" aus Millionen von kleinen Dingen zusammensetzt. Manchmal hilft es mit der Lupe genauer hinzuschauen...
+Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht bewusst, dass sich das "große Ganze" aus Millionen von kleinen Dingen zusammensetzt. Manchmal hilft es mit der **Lupe genauer hinzuschauen...**
 
 
                                                            α
@@ -130,11 +130,11 @@ java -jar picturedecoder.jar encoded_tesla.png 579744
 ````
 
 Im Ordner "tesla-spionage" sehen sie nun das entschlüsselte Bild mit dem Namen "decoded_tesla.png"
-Jetzt wissen Sie schon mal, dass Tesla die besseren Auto-Designer hat;)
+Jetzt wissen Sie schon mal, dass Tesla die besseren Auto-Designer hat ;)
 Das Bild können sie sich über die GUI ansehen.
 
 Der Dritte Hinweis und die Python Programme geben Aufschluss darüber, dass hier etwas **steganographisch** versteckt ist.
-Benutzen sie das "stegolyzer.py" Programm um die Farbkanäle des Bildes zu untersuchen. Bedenken Sie, dass es neben (R)ot, (G)rün und (B)lau noch den Alpha-Kanal gibt. Dieser ist für die Transparenz zuständig.
+Benutzen sie das "stegolyzer.py" Programm um die Farbkanäle des Bildes zu untersuchen. Bedenken Sie, dass es neben (R)ot, (G)rün und (B)lau noch den **Alpha-Kanal** gibt. Dieser ist für die Transparenz zuständig.
 
 Mit
 ````
@@ -174,4 +174,9 @@ ID: bd0c07abe32eeb42963a1059e8e86ea661430f6718c8db10328b32d0801b3e09
 ````
 
 Herzlichen Glückwunsch! Sie haben die Challenge erfolgreich abgeschlossen!
+
+```diff
++ this will be highlighted in green
+- this will be highlighted in red
+```
                                                                                                                   

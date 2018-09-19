@@ -117,6 +117,9 @@ Fügen sie unter **"# TODO: Fill in here (Hier ergaenzen)"** folgenden Code ein
 v.append(a & 1)
 ````
 Diese Zeile befiehlt dem Programm den Alpha-Kanal zu exfiltrieren.
+Im Code würde es richtig so aussehen...
+
+![](screenshots/decodingpc.png)
 
 Nun können wir den **stegangraphischen decoder auf das Bild anwenden** mittels folgendem Befehl
 ````

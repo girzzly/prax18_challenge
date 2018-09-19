@@ -123,7 +123,7 @@ Im Code würde es richtig so aussehen...
 
 Nun können wir den **stegangraphischen decoder auf das Bild anwenden** mittels folgendem Befehl
 
-![](screenshots/terminal5.1)
+![](screenshots/terminal5.1.png)
 
 In dem "tesla-spionage" Ordner wurde nun eine Textnachricht namens **"nachricht.txt" erstellt**. Sie können sich die Nachricht über die GUI anzeigen lassen und werden bemerken, dass dort eine flag zu sehen.
 

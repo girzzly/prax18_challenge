@@ -31,13 +31,18 @@ public class PictureDecoder {
      * @param args Die übergebenen Komandozeilenargumente.
      */
     public static void main(String[] args) {
-        
+
         // Überprüfung der Anzahl der mitgegebenen Parameter.
         switch (args.length) {
             case 2:
                 file = args[0]; // Erster Parameter Dateiname
-                input = parseInt(args[1]); // Zweiter Parameter Zahl
 
+                try {
+                    input = parseInt(args[1]); // Zweiter Parameter Zahl
+
+                } catch (NumberFormatException e) {
+                    System.out.println("Der eingegebene Parameter ist zu lang oder enthält Text");
+                }
                 setUpReader();
 
                 if (input == getDecimal(output)) {
@@ -53,11 +58,11 @@ public class PictureDecoder {
             case 1:
                 System.out.println("Bitte geben Sie einen Parameter an.");
                 break;
-                
+
             case 0:
                 System.out.println("Bitte geben Sie einen Dateinamen an.");
                 break;
-                
+
             default:
                 System.out.println("Sie haben zu viele parameter verwendet.");
                 break;
@@ -74,7 +79,7 @@ public class PictureDecoder {
         reader = null;
 
         try {
-            
+
             reader = new BufferedReader(new InputStreamReader(new FileInputStream(code))); // Liest Datei 'Code' ein.
             output = reader.readLine(); // List die erste Zeile der Datei 'Code'.
             reader.close(); // Leser wird geschlossen.
@@ -91,6 +96,7 @@ public class PictureDecoder {
 
     /**
      * Rechnet die Binärwerte in der Code-Datei in eine dezimale Zahl um.
+     *
      * @param output Der inhalt der Datei 'Code' als String.
      * @return Liefert die umgerechnete dezimale Zahl zurück.
      */
@@ -100,10 +106,9 @@ public class PictureDecoder {
         // letztes Zeichen: Position 23
         // 0101 0111 1001 0111 0100 0100
         // 5    7    9    7    4    4
-        
         int blocks = 6;         // es werden 6 Blöcke erzeugt 
         int blockSize = 4;      // jeweils mit der Größe 4
-        
+
         int[] numbers = new int[blocks];
 
         // Das Array wird befüllt
@@ -135,9 +140,9 @@ public class PictureDecoder {
     public static void decode() {
 
         File inputFile = new File(file);
-        
+
         String decodeFilename = file.substring(8, file.length()); // Schneidet 'encode_' von dem Dateinamen ab.
-        
+
         File outputFile = new File("decoded_" + decodeFilename); // Schreibt 'decoded_' an den Dateinamen.
 
         FileInputStream reader;
@@ -153,13 +158,13 @@ public class PictureDecoder {
             while (sign != -1) {
 
                 writer.write(sign - 1); // Beim decodieren wird der Bytetwert
-                                        // jedes Zeichens wird um eins verringert.
+                // jedes Zeichens wird um eins verringert.
                 sign = reader.read(); // Lese nächstes Zeichen ein.
             }
 
             reader.close();
             writer.close();
-            
+
             System.out.println("Datei '" + file + "' wurde erfolgreich decodiert.");
 
         } catch (FileNotFoundException e) {

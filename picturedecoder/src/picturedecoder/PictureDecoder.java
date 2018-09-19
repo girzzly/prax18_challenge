@@ -75,8 +75,8 @@ public class PictureDecoder {
 
         try {
             
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(code))); // Liest Datei 'code' ein.
-            output = reader.readLine(); // List die erste Zeile der Datei 'code'.
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(code))); // Liest Datei 'Code' ein.
+            output = reader.readLine(); // List die erste Zeile der Datei 'Code'.
             reader.close(); // Leser wird geschlossen.
 
         } catch (FileNotFoundException e) {
@@ -101,11 +101,12 @@ public class PictureDecoder {
         // 0101 0111 1001 0111 0100 0100
         // 5    7    9    7    4    4
         
-        int blocks = 6;
-        int blockSize = 4;
+        int blocks = 6;         // es werden 6 Blöcke erzeugt 
+        int blockSize = 4;      // jeweils mit der Größe 4
         
         int[] numbers = new int[blocks];
 
+        // Das Array wird befüllt
         for (int i = 0; i < numbers.length; i++) {
 
             numbers[i] = parseInt(output.substring(0, blockSize));
@@ -113,7 +114,8 @@ public class PictureDecoder {
                 output = output.substring(blockSize, output.length() - 1);
             }
         }
-        
+
+        // Umrechnung von Binär in Dezimal
         int number = 0;
         int j = 100000;
         for (int i = 0; i < numbers.length; i++) {
@@ -136,7 +138,7 @@ public class PictureDecoder {
         
         String decodeFilename = file.substring(8, file.length()); // Schneidet 'encode_' von dem Dateinamen ab.
         
-        File outputFile = new File("decoded_" + decodeFilename); // Schreibt 'decode_' an den Dateinamen.
+        File outputFile = new File("decoded_" + decodeFilename); // Schreibt 'decoded_' an den Dateinamen.
 
         FileInputStream reader;
         FileOutputStream writer;
@@ -150,7 +152,7 @@ public class PictureDecoder {
 
             while (sign != -1) {
 
-                writer.write(sign - 1); // Beim decodieren wird der Bitwert
+                writer.write(sign - 1); // Beim decodieren wird der Bytetwert
                                         // jedes Zeichens wird um eins verringert.
                 sign = reader.read(); // Lese nächstes Zeichen ein.
             }

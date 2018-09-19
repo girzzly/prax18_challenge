@@ -67,12 +67,12 @@ public class PictureEncoder {
 
                     if (transforationType.equals("encode")) {
 
-                        writer.write(sign + 1); // Beim codieren wird der Bitwert
-                                                // jedes Zeichens wird um eins erhöht.
+                        writer.write(sign + 1); // Beim codieren wird der Bytewert
+                                                // jedes Zeichens um eins erhöht.
 
                     } else if (transforationType.equals("decode")) {
 
-                        writer.write(sign - 1); // Beim decodieren wird der Bitwert
+                        writer.write(sign - 1); // Beim decodieren wird der Bytewert
                                                 // jedes Zeichens wird um eins verringert.
                     }
 

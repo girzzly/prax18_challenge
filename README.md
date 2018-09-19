@@ -57,77 +57,35 @@ Ich werde Schritt für Schritt aufzeigen wie und in welcher Reihenfolge man vorz
 
 Als erstes kopieren Sie den Ordner "tesla-spionage" auf den **Desktop** unserer Kali-Linux Maschine
 Anschließend navigieren Sie per Terminal in den Ordner mit dem folgenden Befehl
-```
-cd Desktop/tesla-spionage
-```
-Sie sehen nun folgende in dem Ornder befindliche Dateien:
-- code 
-- encoded_tesla.png
-- jd-gui-1.4.0_decompiler.jar
-- picturedecoder.jar
-- stegolyzer.py
-- decoding.py
+
+![](screenshots/terminal1.png)
+
+Sie sehen nun folgende in dem Ordner befindliche Dateien:
+
+![](screenshots/ordner.png)
 
 Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. Dies machen Sie über diesen Befehl
 
-```
-java -jar jd-gui-1.4.0_dempiler.jar picturedecoder.jar 
-```
-Nun öffnet sich eine grafische Oberfläche und wir können uns damit den Programmcode vom pictureencoder ansehen.
-Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweiter Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
+![](screenshots/terminal2.1.png)
 
-```
-                if (input == getDecimal(output)) {
+Nun öffnet sich eine grafische Oberfläche und Sie können sich den Programmcode vom pictureencoder ansehen. Werfen sie einen Blick auf die main. Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweiter Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
 
-                    decode();
+![](screenshots/code1.png)
 
-                }
-```                
 Nun hilft es einen Blick auf die "getDecimal" Methode zu werfen.
-````
-    public static int getDecimal(String output) {
 
-        // Länge der Zahlenfolge: 24
-        // 0101 0111 1001 0111 0100 0100
-        // 5    7    9    7    4    4
-        
-        int blocks = 6;
-        int blockSize = 4;
-        
-        int[] numbers = new int[blocks];
+![](screenshots/code2.png)
 
-        for (int i = 0; i < numbers.length; i++) {
-
-            numbers[i] = parseInt(output.substring(0, blockSize));
-            if (output.length() > blockSize) {
-                output = output.substring(blockSize, output.length() - 1);
-            }
-        }
-        
-        int number = 0;
-        int j = 100000;
-        for (int i = 0; i < numbers.length; i++) {
-            number = number + ((numbers[i] % 10 * 1) + (numbers[i] / 10 % 10 * 2)
-                    + (numbers[i] / 100 % 10 * 4)
-                    + (numbers[i] / 1000 % 10 * 8)) * j;
-            j = j / 10;
-
-        }
-
-        return number;
-    }
-````
 "output" übergibt hier den Code (010101111001011101000100). Dieser wird in der ersten for-Schleife in **6 gleichgroße Blöcke a 4 Ziffern** in einem Array gespeichert. In der zweiten for-Schleife geschieht die Umrechnung von Binär zu Dezimal. Allerdings wird nicht die gesamte Binärzahl als Ganzes umgerechnet, sondern Block für Block. Sprich jede 4 Bit repräsentieren eine Dezimal-Zahl.
 Somit wird am Ende folgende Dezimalzahl zurückgegeben.
 
         // 0101 0111 1001 0111 0100 0100
         // 5    7    9    7    4    4           <--- Diese Dezimalzahl gibt die Methode zurück.
         
-Damit haben wissen wir welchen (zweiten) Parameter wir verwenden müssen, um das Bild zu entschlüsseln.
+Damit haben wissen wir welchen (zweiten) Parameter wir verwenden müssen, um das Bild zu decodieren.
 Der erste Parameter ist der Dateiname des Bildes. Also müssen Sie folgenden Befehl eingeben um das Bild zu decoden.
-````
-java -jar picturedecoder.jar encoded_tesla.png 579744
-````
+
+![](screenshots/terminal3.1.png)
 
 Im Ordner "tesla-spionage" sehen sie nun das entschlüsselte Bild mit dem Namen "decoded_tesla.png"
 Jetzt wissen Sie schon mal, dass Tesla die besseren Auto-Designer hat ;)
@@ -143,15 +101,12 @@ python stegolyzer.py decoded_tesla.png
 und den Parametern **red, green, blue und alpha** können sie die jeweiligen Farbkanäle untersuchen.
 Hier ein Beispiel um den roten Farbkanal zu untersuchen
 
-````
-python stegolyzer.py decoded_tesla.png red
-````
+![](screenshots/terminal4.png)
 
 Allerdings werden Sie in den RBG Farbkanälen keine Auffälligkeiten feststellen. Anders sieht es im Alpha-Kanal aus.
 Geben Sie
-````
-python stegolyzer.py decoded_tesla.png alpha
-````
+
+![](screenshots/terminal4.1.png)
 
 in das Terminal ein und Sie werden sehen, dass es hier gegenüber den RBG Kanälen starke Abweichungen gibt. Genau hier ist auch die steganographische Nachricht versteckt. Sie wurde im Last Significant Bit (LSB) des Alpha-Kanals versteckt.
 
@@ -162,11 +117,14 @@ Fügen sie unter **"# TODO: Fill in here (Hier ergaenzen)"** folgenden Code ein
 v.append(a & 1)
 ````
 Diese Zeile befiehlt dem Programm den Alpha-Kanal zu exfiltrieren.
+Im Code würde es richtig so aussehen...
+
+![](screenshots/decodingpy.png)
 
 Nun können wir den **stegangraphischen decoder auf das Bild anwenden** mittels folgendem Befehl
-````
-python decoding.py decoded_tesla.png nachricht.txt
-````
+
+![](screenshots/terminal5.1)
+
 In dem "tesla-spionage" Ordner wurde nun eine Textnachricht namens **"nachricht.txt" erstellt**. Sie können sich die Nachricht über die GUI anzeigen lassen und werden bemerken, dass dort eine flag zu sehen.
 
 ````
@@ -176,4 +134,3 @@ ID: bd0c07abe32eeb42963a1059e8e86ea661430f6718c8db10328b32d0801b3e09
 Herzlichen Glückwunsch! Sie haben die Challenge erfolgreich abgeschlossen!
 
 
-![image](screenshots/terminal.png)

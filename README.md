@@ -57,9 +57,9 @@ Ich werde Schritt für Schritt aufzeigen wie und in welcher Reihenfolge man vorz
 
 Als erstes kopieren Sie den Ordner "tesla-spionage" auf den **Desktop** unserer Kali-Linux Maschine
 Anschließend navigieren Sie per Terminal in den Ordner mit dem folgenden Befehl
-```
-cd Desktop/tesla-spionage
-```
+
+![](screenshots/terminal1.png)
+
 Sie sehen nun folgende in dem Ornder befindliche Dateien:
 - code 
 - encoded_tesla.png

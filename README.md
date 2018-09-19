@@ -66,9 +66,8 @@ Sie sehen nun folgende in dem Ordner befindliche Dateien:
 
 Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. Dies machen Sie über diesen Befehl
 
-```
-java -jar jd-gui-1.4.0_dempiler.jar picturedecoder.jar 
-```
+![](screenshots/terminal2.1.png)
+
 Nun öffnet sich eine grafische Oberfläche und wir können uns damit den Programmcode vom pictureencoder ansehen.
 Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweiter Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
 

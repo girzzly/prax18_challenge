@@ -73,39 +73,9 @@ Nun öffnet sich eine grafische Oberfläche und Sie können sich den Programmcod
 ![](screenshots/code1.png)
 
 Nun hilft es einen Blick auf die "getDecimal" Methode zu werfen.
-````
-    public static int getDecimal(String output) {
 
-        // Länge der Zahlenfolge: 24
-        // 0101 0111 1001 0111 0100 0100
-        // 5    7    9    7    4    4
-        
-        int blocks = 6;
-        int blockSize = 4;
-        
-        int[] numbers = new int[blocks];
+![](screenshots/code2.png)
 
-        for (int i = 0; i < numbers.length; i++) {
-
-            numbers[i] = parseInt(output.substring(0, blockSize));
-            if (output.length() > blockSize) {
-                output = output.substring(blockSize, output.length() - 1);
-            }
-        }
-        
-        int number = 0;
-        int j = 100000;
-        for (int i = 0; i < numbers.length; i++) {
-            number = number + ((numbers[i] % 10 * 1) + (numbers[i] / 10 % 10 * 2)
-                    + (numbers[i] / 100 % 10 * 4)
-                    + (numbers[i] / 1000 % 10 * 8)) * j;
-            j = j / 10;
-
-        }
-
-        return number;
-    }
-````
 "output" übergibt hier den Code (010101111001011101000100). Dieser wird in der ersten for-Schleife in **6 gleichgroße Blöcke a 4 Ziffern** in einem Array gespeichert. In der zweiten for-Schleife geschieht die Umrechnung von Binär zu Dezimal. Allerdings wird nicht die gesamte Binärzahl als Ganzes umgerechnet, sondern Block für Block. Sprich jede 4 Bit repräsentieren eine Dezimal-Zahl.
 Somit wird am Ende folgende Dezimalzahl zurückgegeben.
 

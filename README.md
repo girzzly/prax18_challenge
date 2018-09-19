@@ -122,9 +122,9 @@ Im Code würde es richtig so aussehen...
 ![](screenshots/decodingpy.png)
 
 Nun können wir den **stegangraphischen decoder auf das Bild anwenden** mittels folgendem Befehl
-````
-python decoding.py decoded_tesla.png nachricht.txt
-````
+
+![](screenshots/terminal5.1)
+
 In dem "tesla-spionage" Ordner wurde nun eine Textnachricht namens **"nachricht.txt" erstellt**. Sie können sich die Nachricht über die GUI anzeigen lassen und werden bemerken, dass dort eine flag zu sehen.
 
 ````
@@ -133,5 +133,4 @@ ID: bd0c07abe32eeb42963a1059e8e86ea661430f6718c8db10328b32d0801b3e09
 
 Herzlichen Glückwunsch! Sie haben die Challenge erfolgreich abgeschlossen!
 
-
-![image](screenshots/terminal.png)
+![](screenshots/winterkorn_daumenhoch2.png)

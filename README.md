@@ -176,4 +176,4 @@ ID: bd0c07abe32eeb42963a1059e8e86ea661430f6718c8db10328b32d0801b3e09
 Herzlichen Glückwunsch! Sie haben die Challenge erfolgreich abgeschlossen!
 
 
-![image](https://user-images.githubusercontent.com/38888767/45692827-04665200-bb5c-11e8-8ef9-c18e4f4c807f.png)
+![image](screenshots/terminal.png)

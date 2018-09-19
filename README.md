@@ -70,7 +70,7 @@ Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. 
 
 Nun öffnet sich eine grafische Oberfläche und Sie können sich den Programmcode vom pictureencoder ansehen. Werfen sie einen Blick auf die main. Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweiter Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
 
-![](screenshots/code1.png)
+![](screenshots/code1.1.png)
 
 Nun hilft es einen Blick auf die "getDecimal" Methode zu werfen.
 
@@ -133,4 +133,4 @@ ID: bd0c07abe32eeb42963a1059e8e86ea661430f6718c8db10328b32d0801b3e09
 
 Herzlichen Glückwunsch! Sie haben die Challenge erfolgreich abgeschlossen!
 
-
+![](screenshots/winterkorn_daumenhoch2.png)

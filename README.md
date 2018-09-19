@@ -82,11 +82,10 @@ Somit wird am Ende folgende Dezimalzahl zurückgegeben.
         // 0101 0111 1001 0111 0100 0100
         // 5    7    9    7    4    4           <--- Diese Dezimalzahl gibt die Methode zurück.
         
-Damit haben wissen wir welchen (zweiten) Parameter wir verwenden müssen, um das Bild zu entschlüsseln.
+Damit haben wissen wir welchen (zweiten) Parameter wir verwenden müssen, um das Bild zu decodieren.
 Der erste Parameter ist der Dateiname des Bildes. Also müssen Sie folgenden Befehl eingeben um das Bild zu decoden.
-````
-java -jar picturedecoder.jar encoded_tesla.png 579744
-````
+
+![](screenshots/terminal3.1.png)
 
 Im Ordner "tesla-spionage" sehen sie nun das entschlüsselte Bild mit dem Namen "decoded_tesla.png"
 Jetzt wissen Sie schon mal, dass Tesla die besseren Auto-Designer hat ;)

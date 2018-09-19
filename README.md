@@ -60,13 +60,9 @@ Anschließend navigieren Sie per Terminal in den Ordner mit dem folgenden Befehl
 
 ![](screenshots/terminal1.png)
 
-Sie sehen nun folgende in dem Ornder befindliche Dateien:
-- code 
-- encoded_tesla.png
-- jd-gui-1.4.0_decompiler.jar
-- picturedecoder.jar
-- stegolyzer.py
-- decoding.py
+Sie sehen nun folgende in dem Ordner befindliche Dateien:
+
+![](screenshots/ordner.png)
 
 Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. Dies machen Sie über diesen Befehl
 

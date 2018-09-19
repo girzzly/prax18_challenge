@@ -101,15 +101,12 @@ python stegolyzer.py decoded_tesla.png
 und den Parametern **red, green, blue und alpha** können sie die jeweiligen Farbkanäle untersuchen.
 Hier ein Beispiel um den roten Farbkanal zu untersuchen
 
-````
-python stegolyzer.py decoded_tesla.png red
-````
+![](screenshots/terminal4.png)
 
 Allerdings werden Sie in den RBG Farbkanälen keine Auffälligkeiten feststellen. Anders sieht es im Alpha-Kanal aus.
 Geben Sie
-````
-python stegolyzer.py decoded_tesla.png alpha
-````
+
+![](screenshots/terminal4.1.png)
 
 in das Terminal ein und Sie werden sehen, dass es hier gegenüber den RBG Kanälen starke Abweichungen gibt. Genau hier ist auch die steganographische Nachricht versteckt. Sie wurde im Last Significant Bit (LSB) des Alpha-Kanals versteckt.
 

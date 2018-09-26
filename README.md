@@ -42,7 +42,7 @@ Sie werden nicht drumherum kommen das Programm **"picturedecoder.jar" zu decompi
 Ein Decompiler befindet sich im gegebenen Ordner. Benutzen Sie ihn.
 
 #### 2.
-Man könnte denken, dass der gegebene Code eine große Zahl repräsentiert...vielmehr ist er aufgeteilt in **vier gleichgroße Blöcke...**
+Man könnte denken, dass der gegebene Code eine große Zahl repräsentiert...vielmehr ist er aufgeteilt in **6 gleichgroße Blöcke...**
 Schauen sie sich den Programmcode vom Picturedecoder genau an...
 
 #### 3.

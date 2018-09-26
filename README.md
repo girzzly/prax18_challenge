@@ -82,8 +82,8 @@ Somit wird am Ende folgende Dezimalzahl zurückgegeben:
         // 0101 0111 1001 0111 0100 0100
         // 5    7    9    7    4    4           <--- Diese Dezimalzahl gibt die Methode zurück.
         
-Damit wissen wir welchen (zweiten) Parameter wir verwenden müssen, um das Bild zu decodieren.
-Der erste Parameter ist der Dateiname des Bildes. Also müssen Sie folgenden Befehl eingeben um das Bild zu decoden:
+Damit wissen wir welchen **(zweiten) Parameter** wir verwenden müssen, um das Bild zu decodieren.
+Der **erste Parameter ist der Dateiname des Bildes**. Also müssen Sie folgenden Befehl eingeben um das Bild zu decoden:
 
 ![](screenshots/terminal3.1.png)
 

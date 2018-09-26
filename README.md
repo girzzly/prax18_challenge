@@ -24,7 +24,7 @@ Schließlich waren Sie damals treibende Kraft bei der Software-Manipulation in I
 
 Zunächst empfiehlt es sich die Challenge auf der **Kali-Linux Maschine** durchzuführen, da für Windows etwaige Python-Module besorgt werden müssen.
 
-Sie bekommen einen Ordner mit folgenden Datein und Programmen:
+Sie bekommen einen Ordner mit folgenden Dateien und Programmen:
 - code 
 - encoded_tesla.png
 - jd-gui-1.4.0_decompiler.jar

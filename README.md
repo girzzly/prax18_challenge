@@ -68,7 +68,7 @@ Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. 
 
 ![](screenshots/terminal2.1.png)
 
-Nun öffnet sich eine grafische Oberfläche und Sie können sich den Programmcode vom pictureencoder ansehen. Werfen sie einen Blick auf die main. Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweiter Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
+Nun öffnet sich eine grafische Oberfläche und Sie können sich den Programmcode vom picturedecoder ansehen. Werfen sie einen Blick auf die main. Sie sehen, dass die Methode "decode()" aufgerufen wird, wenn der input (zweiter Parameter) gleich dem zurückgegebenen Wert der "getDecimal()" Methode ist.
 
 ![](screenshots/code1.1.png)
 

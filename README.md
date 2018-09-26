@@ -43,7 +43,7 @@ Ein Decompiler befindet sich im gegebenen Ordner. Benutzen Sie ihn.
 
 #### 2.
 Man könnte denken, dass der gegebene Code eine große Zahl repräsentiert...vielmehr ist er aufgeteilt in **6 gleichgroße Blöcke...**
-Schauen sie sich den Programmcode vom Picturedecoder genau an...
+Schauen Sie sich den Programmcode vom Picturedecoder genau an...
 
 #### 3.
 Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht bewusst, dass sich das "große Ganze" aus Millionen von kleinen Dingen zusammensetzt. Manchmal hilft es mit der **Lupe genauer hinzuschauen...**

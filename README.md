@@ -64,7 +64,7 @@ Sie sehen nun folgende in dem Ordner befindliche Dateien:
 
 ![](screenshots/ordner.png)
 
-Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. Dies machen Sie über diesen Befehl
+Der erste eigentliche Schritt beginnt mit dem Decompilieren des picturedecoder. Dies machen Sie über diesen Befehl:
 
 ![](screenshots/terminal2.1.png)
 

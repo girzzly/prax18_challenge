@@ -87,9 +87,9 @@ Der **erste Parameter ist der Dateiname des Bildes**. Also müssen Sie folgenden
 
 ![](screenshots/terminal3.1.png)
 
-Im Ordner "tesla-spionage" sehen sie nun das entschlüsselte Bild mit dem Namen "decoded_tesla.png"
+Im Ordner "tesla-spionage" sehen sie nun das entschlüsselte Bild mit dem Namen **"decoded_tesla.png"**
 Jetzt wissen Sie schon mal, dass Tesla die besseren Auto-Designer hat ;)
-Das Bild können sie sich über die GUI ansehen.
+Das Bild können Sie sich über die GUI ansehen.
 
 Der Dritte Hinweis und die Python Programme geben Aufschluss darüber, dass hier etwas **steganographisch** versteckt ist.
 Benutzen sie das "stegolyzer.py" Programm um die Farbkanäle des Bildes zu untersuchen. Bedenken Sie, dass es neben (R)ot, (G)rün und (B)lau noch den **Alpha-Kanal** gibt. Dieser ist für die Transparenz zuständig.

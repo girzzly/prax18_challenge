@@ -76,7 +76,7 @@ Nun hilft es einen Blick auf die **"getDecimal"** Methode zu werfen.
 
 ![](screenshots/code2.png)
 
-"output" übergibt hier den Code (010101111001011101000100). Dieser wird in der ersten for-Schleife in **6 gleichgroße Blöcke a 4 Ziffern** in einem Array gespeichert. In der zweiten for-Schleife geschieht die Umrechnung von **Binär zu Dezimal**. Allerdings wird nicht die gesamte Binärzahl als Ganzes umgerechnet, sondern **Block für Block**. Sprich **jede 4 Bit repräsentieren eine Dezimal-Zahl**.
+**"output"** übergibt hier den **Code (010101111001011101000100)**. Dieser wird in der ersten for-Schleife in **6 gleichgroße Blöcke a 4 Ziffern** in einem Array gespeichert. In der zweiten for-Schleife geschieht die Umrechnung von **Binär zu Dezimal**. Allerdings wird nicht die gesamte Binärzahl als Ganzes umgerechnet, sondern **Block für Block**. Sprich **jede 4 Bit repräsentieren eine Dezimal-Zahl**.
 Somit wird am Ende folgende Dezimalzahl zurückgegeben:
 
         // 0101 0111 1001 0111 0100 0100

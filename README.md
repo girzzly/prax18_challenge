@@ -52,7 +52,7 @@ Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht
                                                            α
 
 ## Musterlösung
-In der Musterlösung gebe ich eine detaillierten Beschreibung zur vollständigen Lösung meiner PRAX-Challenge.
+In der Musterlösung gebe ich eine detaillierte Beschreibung zur vollständigen Lösung meiner PRAX-Challenge.
 Ich werde Schritt für Schritt aufzeigen wie und in welcher Reihenfolge man vorzugehen hat, um die benötigten Informationen zu exfiltrieren.
 
 Als erstes kopieren Sie den Ordner "tesla-spionage" auf den **Desktop** Ihrer Kali-Linux Maschine.

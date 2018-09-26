@@ -99,33 +99,33 @@ Mit
 python stegolyzer.py decoded_tesla.png
 ````
 und den Parametern **red, green, blue und alpha** können sie die jeweiligen Farbkanäle untersuchen.
-Hier ein Beispiel um den roten Farbkanal zu untersuchen
+Hier ein Beispiel um den roten Farbkanal zu untersuchen:
 
 ![](screenshots/terminal4.png)
 
-Allerdings werden Sie in den RBG Farbkanälen keine Auffälligkeiten feststellen. Anders sieht es im Alpha-Kanal aus.
+Allerdings werden Sie in den RBG Farbkanälen keine Auffälligkeiten feststellen. Anders sieht es im **Alpha-Kanal** aus.
 Geben Sie
 
 ![](screenshots/terminal4.1.png)
 
-in das Terminal ein und Sie werden sehen, dass es hier gegenüber den RBG Kanälen starke Abweichungen gibt. Genau hier ist auch die steganographische Nachricht versteckt. Sie wurde im Last Significant Bit (LSB) des Alpha-Kanals versteckt.
+in das Terminal ein und Sie werden sehen, dass es hier gegenüber den RBG Kanälen starke Abweichungen gibt. Genau hier ist auch die **steganographische Nachricht** versteckt. Sie wurde im **Last Significant Bit (LSB) des Alpha-Kanals** versteckt.
 
-Wenn sie nun den "decoding.py" benutzen wollen um die Nachricht zu exfiltrieren werden sie bemerken, dass dies nicht geht, da etwas im Programmcode fehlt. Öffnen sie also über die GUI "decoding.py" und lassen Sie sich den Programmcode anzeigen.
+Wenn sie nun den **"decoding.py"** benutzen wollen um die Nachricht zu exfiltrieren werden sie bemerken, dass dies nicht geht, da etwas im Programmcode fehlt. Öffnen sie also über die GUI **"decoding.py"** und lassen Sie sich den Programmcode anzeigen.
 
 Fügen sie unter **"# TODO: Fill in here (Hier ergaenzen)"** folgenden Code ein
 ````
 v.append(a & 1)
 ````
-Diese Zeile befiehlt dem Programm den Alpha-Kanal zu exfiltrieren.
+Diese Zeile befiehlt dem Programm den **Alpha-Kanal** zu exfiltrieren.
 Im Code würde es richtig so aussehen...
 
 ![](screenshots/decodingpy.png)
 
-Nun können wir den **stegangraphischen decoder auf das Bild anwenden** mittels folgendem Befehl
+Nun können wir mittels folgendem Befehl den **stegangraphischen decoder auf das Bild anwenden**:
 
 ![](screenshots/terminal5.1.png)
 
-In dem "tesla-spionage" Ordner wurde nun eine Textnachricht namens **"nachricht.txt" erstellt**. Sie können sich die Nachricht über die GUI anzeigen lassen und werden bemerken, dass dort eine flag zu sehen.
+In dem **"tesla-spionage"** Ordner wurde nun eine Textnachricht namens **"nachricht.txt" erstellt**. Sie können sich die Nachricht über die GUI anzeigen lassen und werden bemerken, dass dort eine **flag** zu sehen.
 
 ````
 ID: bd0c07abe32eeb42963a1059e8e86ea661430f6718c8db10328b32d0801b3e09

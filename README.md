@@ -72,7 +72,7 @@ Nun öffnet sich eine grafische Oberfläche und Sie können sich den Programmcod
 
 ![](screenshots/code1.1.png)
 
-Nun hilft es einen Blick auf die "getDecimal" Methode zu werfen.
+**Nun hilft es einen Blick auf die "getDecimal" Methode zu werfen.**
 
 ![](screenshots/code2.png)
 

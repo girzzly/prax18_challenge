@@ -1,4 +1,4 @@
-# PRAX18 Challenge - TESLA SPIONAGE
+# PRAX18 Challenge - Tesla Spionage
 
 
 Sie sind in der IT-Abteilung bei **Volkswagen** und werden beauftragt die Kommunikation bei der Konkurrenz zu entschlüsseln.

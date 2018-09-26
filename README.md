@@ -55,7 +55,7 @@ Wenn wir etwas sehen, dann sehen wir es als großes Ganzes. Uns ist oft garnicht
 In der Musterlösung gebe ich eine detaillierte Beschreibung zur vollständigen Lösung meiner PRAX-Challenge.
 Ich werde Schritt für Schritt aufzeigen wie und in welcher Reihenfolge man vorzugehen hat, um die benötigten Informationen zu exfiltrieren.
 
-Als erstes kopieren Sie den Ordner **"tesla-spionage"** auf den **Desktop** Ihrer Kali-Linux Maschine.
+Als erstes kopieren Sie den Ordner **"tesla_spionage"** auf den **Desktop** Ihrer Kali-Linux Maschine.
 Anschließend navigieren Sie mit folgendem Befehl per **Terminal** in den Ordner:
 
 ![](screenshots/terminal1.png)
@@ -87,7 +87,7 @@ Der **erste Parameter ist der Dateiname des Bildes**. Also müssen Sie folgenden
 
 ![](screenshots/terminal3.1.png)
 
-Im Ordner **"tesla-spionage"** sehen Sie nun das entschlüsselte Bild mit dem Namen **"decoded_tesla.png"**
+Im Ordner **"tesla_spionage"** sehen Sie nun das entschlüsselte Bild mit dem Namen **"decoded_tesla.png"**
 Jetzt wissen Sie schon mal, dass Tesla die besseren Auto-Designer hat ;)
 Das Bild können Sie sich über die GUI ansehen.
 
@@ -125,7 +125,7 @@ Nun können wir mittels folgendem Befehl den **stegangraphischen decoder auf das
 
 ![](screenshots/terminal5.1.png)
 
-In dem **"tesla-spionage"** Ordner wurde nun eine Textnachricht namens **"nachricht.txt" erstellt**. Sie können sich die Nachricht über die GUI anzeigen lassen und werden bemerken, dass dort eine **flag** zu sehen.
+In dem **"tesla_spionage"** Ordner wurde nun eine Textnachricht namens **"nachricht.txt" erstellt**. Sie können sich die Nachricht über die GUI anzeigen lassen und werden bemerken, dass dort eine **flag** zu sehen.
 
 ````
 ID: bd0c07abe32eeb42963a1059e8e86ea661430f6718c8db10328b32d0801b3e09

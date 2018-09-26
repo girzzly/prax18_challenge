@@ -56,7 +56,7 @@ In der Musterlösung gebe ich eine detaillierten Beschreibung zur vollständigen
 Ich werde Schritt für Schritt aufzeigen wie und in welcher Reihenfolge man vorzugehen hat, um die benötigten Informationen zu exfiltrieren.
 
 Als erstes kopieren Sie den Ordner "tesla-spionage" auf den **Desktop** Ihrer Kali-Linux Maschine.
-Anschließend navigieren Sie per Terminal in den Ordner mit dem folgenden Befehl
+Anschließend navigieren Sie mit folgendem Befehl per Terminal in den Ordner.
 
 ![](screenshots/terminal1.png)
 

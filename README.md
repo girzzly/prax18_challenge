@@ -16,7 +16,7 @@ Jedoch kann mit dem Inhalt dieser Pakete niemand etwas anfangen, da sie verschl�
 
 Da kommen sie als ehemaliger Penetration-Tester ins Spiel. Sie kennen sich hervorragend mit dem
 Aufspüren von Sicherheitslücken, dem Ver- und Entschlüsseln von Dateien sowie mit dem Verändern von Programmen aus.
-Schließlich waren Sie damals treibende Kraft bei der Software-Manipulation im ihrem Unternehmen... ;-)
+Schließlich waren Sie damals treibende Kraft bei der Software-Manipulation in ihrem Unternehmen... ;-)
 
 
 

@@ -87,7 +87,7 @@ Der **erste Parameter ist der Dateiname des Bildes**. Also müssen Sie folgenden
 
 ![](screenshots/terminal3.1.png)
 
-Im Ordner "tesla-spionage" sehen sie nun das entschlüsselte Bild mit dem Namen **"decoded_tesla.png"**
+Im Ordner **"tesla-spionage"** sehen Sie nun das entschlüsselte Bild mit dem Namen **"decoded_tesla.png"**
 Jetzt wissen Sie schon mal, dass Tesla die besseren Auto-Designer hat ;)
 Das Bild können Sie sich über die GUI ansehen.
 

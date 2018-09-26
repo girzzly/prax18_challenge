@@ -110,9 +110,9 @@ Geben Sie
 
 in das Terminal ein und Sie werden sehen, dass es hier gegenüber den RBG Kanälen starke Abweichungen gibt. Genau hier ist auch die **steganographische Nachricht** versteckt. Sie wurde im **Last Significant Bit (LSB) des Alpha-Kanals** versteckt.
 
-Wenn sie nun **"decoding.py"** benutzen wollen um die Nachricht zu exfiltrieren werden sie bemerken, dass dies nicht geht, da etwas im Programmcode fehlt. Öffnen sie also über die GUI **"decoding.py"** und lassen Sie sich den Programmcode anzeigen.
+Wenn Sie nun **"decoding.py"** benutzen wollen um die Nachricht zu exfiltrieren werden sie bemerken, dass dies nicht geht, da etwas im Programmcode fehlt. Öffnen Sie also über die GUI **"decoding.py"** und lassen Sie sich den Programmcode anzeigen.
 
-Fügen sie unter **"# TODO: Fill in here (Hier ergaenzen)"** folgenden Code ein
+Fügen Sie unter **"# TODO: Fill in here (Hier ergaenzen)"** folgenden Code ein:
 ````
 v.append(a & 1)
 ````
@@ -121,7 +121,7 @@ Im Code würde es richtig so aussehen...
 
 ![](screenshots/decodingpy.png)
 
-Nun können wir mittels folgendem Befehl den **stegangraphischen decoder auf das Bild anwenden**:
+Nun können Sie mittels folgendem Befehl den **stegangraphischen decoder auf das Bild anwenden**:
 
 ![](screenshots/terminal5.1.png)
 
